@@ -37,10 +37,3 @@ export class UpdateinteractionComponent implements OnInit {
 }
 
 
-// path:"", component:InteractionAppComponent,
-//     children:[
-//       {path:"listall", component: InteractionprofileComponent}, 
-//       {path:"create", component: AddinteractionComponent},
-//       {path:"update", component:UpdateinteractionComponent},
-//       {path:"delete", component:DeleteinteractionComponent}
-//     ]
