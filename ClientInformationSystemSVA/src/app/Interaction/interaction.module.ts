@@ -8,11 +8,13 @@ import { InteractionAppComponent } from './interaction-app.component';
 import { AddinteractionComponent } from './addinteraction/addinteraction.component';
 import { UpdateinteractionComponent } from './updateinteraction/updateinteraction.component';
 import { DeleteinteractionComponent } from './deleteinteraction/deleteinteraction.component';
+import { InteractionprofileComponent } from './interactionprofile/interactionprofile.component';
 
 
 @NgModule({
   declarations: [
     InteractionAppComponent,
+    InteractionprofileComponent,
     AddinteractionComponent,
     UpdateinteractionComponent,
     DeleteinteractionComponent
