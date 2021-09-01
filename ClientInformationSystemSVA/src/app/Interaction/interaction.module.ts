@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { InteractionRoutingModule } from './interaction-routing.module';
 import { InteractionAppComponent } from './interaction-app.component';
 import { RouterLink } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
 import { AddinteractionComponent } from './addinteraction/addinteraction.component';
 import { UpdateinteractionComponent } from './updateinteraction/updateinteraction.component';
 import { DeleteinteractionComponent } from './deleteinteraction/deleteinteraction.component';
@@ -18,7 +18,6 @@ import { DeleteinteractionComponent } from './deleteinteraction/deleteinteractio
     DeleteinteractionComponent
   ],
   imports: [
-    CommonModule,
     InteractionRoutingModule,
     RouterLink,
     ReactiveFormsModule
