@@ -1,0 +1,28 @@
+<form  (ngSubmit)="createclient(ClientForm)" #ClientForm="ngForm">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input type="name" class="form-control" id="name" aria-describedby="emailHelp"  [(ngModel)]="addclient.name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Email</label>
+    <input type="email" class="form-control" id="email"  [(ngModel)]="addclient.email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Phone</label>
+    <input type="string" class="form-control" id="phone"  [(ngModel)]="addclient.phones">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Address</label>
+    <input type="string" class="form-control" id="Address"  [(ngModel)]="addclient.address">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">AddedOn</label>
+    <input type="string" class="form-control" id="AddedOn"  [(ngModel)]="addclient.addedOn">
+  </div>
+  <div class="form-group">
+    <button  type="submit" routerLink="/"class="btn btn-primary">Create Client</button>
+  </div>
+  <div class="alert alert-success" role="alert" *ngIf="Addsuccess">
+      New Client Added!
+  </div>
+</form>

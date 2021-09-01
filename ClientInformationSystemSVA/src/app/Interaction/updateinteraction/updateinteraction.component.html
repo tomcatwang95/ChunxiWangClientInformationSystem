@@ -1,0 +1,28 @@
+<form  (ngSubmit)="updateinteraction(EmployeeForm)" #EmployeeForm="ngForm">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Client Id</label>
+      <input type="name" class="form-control" id="name" aria-describedby="emailHelp"  [(ngModel)]="updateinteraction.clientId">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Employee Id</label>
+      <input type="email" class="form-control" id="email"  [(ngModel)]="updateinteraction.empId">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">IntDate</label>
+      <input type="string" class="form-control" id="phone"  [(ngModel)]="updateinteraction.intDate">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">IntType</label>
+        <input type="string" class="form-control" id="phone"  [(ngModel)]="updateinteraction.intType">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Remark</label>
+        <input type="string" class="form-control" id="phone"  [(ngModel)]="updateinteraction.remarks">
+      </div>
+    <div class="form-group">
+      <button  type="submit" routerLink="/"class="btn btn-primary">Update Interaction</button>
+    </div>
+    <div class="alert alert-success" role="alert" *ngIf="Addsuccess">
+       Interaction updated!
+    </div>
+  </form>

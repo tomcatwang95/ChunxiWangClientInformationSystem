@@ -1,0 +1,34 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<!-- <meta http-equiv="refresh" content="1"> -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand text-primary">Client Service System</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Privacy</a>
+        </li>
+      </ul>
+      <ng-container *ngIf="!isLoggedIn">
+        <form class="nav-item">
+          <a routerLink="Account/login" class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</a>
+        </form>
+      </ng-container>
+      <ng-container>
+        <form class="nav" *ngIf="isLoggedIn">
+          <a class="nav-link">Welcome, {{user}}</a> 
+        </form>
+        <form class="nav-item" *ngIf="isLoggedIn">
+          <a routerLink="Account/logout" class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</a>
+        </form>
+      </ng-container>
+      
+      
+    </div>
+  </nav>
