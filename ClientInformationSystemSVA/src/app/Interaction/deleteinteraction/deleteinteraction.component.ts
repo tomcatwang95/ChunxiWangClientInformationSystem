@@ -15,7 +15,7 @@ export class DeleteinteractionComponent implements OnInit {
   ngOnInit(): void {
     
   }
-  deleteclient(f:NgForm)
+  deleteinteraction(f:NgForm)
   {
     this.interactionservice.deleteinteraction(this.id).subscribe(
       (resp)=>{ if (resp){this.Deletesuccess=true;}
