@@ -1,20 +1,22 @@
 <form  (ngSubmit)="updateemployee(EmployeeForm)" #EmployeeForm="ngForm">
+  
     <div class="form-group">
-      <label for="exampleInputEmail1">Name</label>
-      <input type="name" class="form-control" id="name" aria-describedby="emailHelp"  [(ngModel)]="addemployee.name">
+      <label>Name</label>
+      <input type="name" class="form-control" name="name" [(ngModel)]="addemployee.name">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Email</label>
-      <input type="email" class="form-control" id="email"  [(ngModel)]="addemployee.password">
+      <label>Email</label>
+      <input type="email" class="form-control" name="email"  [(ngModel)]="addemployee.password">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Phone</label>
-      <input type="string" class="form-control" id="phone"  [(ngModel)]="addemployee.Designation">
+      <label>Phone</label>
+      <input type="string" class="form-control" name="phone"  [(ngModel)]="addemployee.Designation">
     </div>
     <div class="form-group">
-      <button  type="submit" routerLink="/"class="btn btn-primary">Update Employee</button>
+      <button  type="submit" class="btn btn-primary">Update Employee</button>
     </div>
     <div class="alert alert-success" role="alert" *ngIf="Addsuccess">
        Employee updated!
+       <button  type="submit" class="btn btn-primary" routerLink="/">Back to Home page</button>
     </div>
   </form>

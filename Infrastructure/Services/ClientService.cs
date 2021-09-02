@@ -63,7 +63,7 @@ namespace Infrastructure.Services
             {
                 throw new ConflictException("No Employee exists");
             }
-            dbClient.Id = client.Id;
+            //dbClient.Id = client.Id;
             dbClient.Name = client.Name;
             dbClient.Email = client.Email;
             dbClient.Phones = client.Phones;

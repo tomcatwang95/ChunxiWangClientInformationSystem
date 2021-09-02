@@ -26,7 +26,7 @@ export class AddclientComponent implements OnInit {
   ngOnInit(): void {
     
   }
-  createclient(f:NgForm)
+  createclient()
   {
     this.clientservice.createclient(this.addclient).subscribe(
       (resp)=>{ if (resp){this.Addsuccess=true;}

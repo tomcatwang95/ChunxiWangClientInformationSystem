@@ -21,7 +21,6 @@ import { InteractionprofileComponent } from './interactionprofile/interactionpro
   ],
   imports: [
     CommonModule,
-    BrowserModule,
     InteractionRoutingModule,
     FormsModule,
     ReactiveFormsModule

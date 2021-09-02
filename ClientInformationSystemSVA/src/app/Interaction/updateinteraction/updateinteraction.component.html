@@ -1,28 +1,29 @@
 <form  (ngSubmit)="updateinteraction(InteractionForm)" #InteractionForm="ngForm">
     <div class="form-group">
       <label for="exampleInputEmail1">Client Id</label>
-      <input type="name" class="form-control" id="name" aria-describedby="emailHelp"  [(ngModel)]="addinteraction.clientId">
+      <input type="name" class="form-control" name="name"  [(ngModel)]="addinteraction.clientId">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Employee Id</label>
-      <input type="email" class="form-control" id="email"  [(ngModel)]="addinteraction.empId">
+      <label>Employee Id</label>
+      <input type="email" class="form-control" name="email"  [(ngModel)]="addinteraction.empId">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">IntDate</label>
-      <input type="string" class="form-control" id="phone"  [(ngModel)]="addinteraction.intDate">
+      <label >IntDate</label>
+      <input type="string" class="form-control" name="phone"  [(ngModel)]="addinteraction.intDate">
     </div>
     <div class="form-group">
-        <label for="exampleInputPassword1">IntType</label>
-        <input type="string" class="form-control" id="phone"  [(ngModel)]="addinteraction.intType">
+        <label >IntType</label>
+        <input type="string" class="form-control" name="phone"  [(ngModel)]="addinteraction.intType">
       </div>
       <div class="form-group">
-        <label for="exampleInputPassword1">Remark</label>
-        <input type="string" class="form-control" id="phone"  [(ngModel)]="addinteraction.remarks">
+        <label >Remark</label>
+        <input type="string" class="form-control" name="phone"  [(ngModel)]="addinteraction.remarks">
       </div>
     <div class="form-group">
-      <button  type="submit" routerLink="/"class="btn btn-primary">Update Interaction</button>
+      <button type="submit" class="btn btn-primary mb-2">Update Interaction</button>
     </div>
     <div class="alert alert-success" role="alert" *ngIf="Addsuccess">
        Interaction updated!
+       <button  type="submit" class="btn btn-primary" routerLink="/">Back to Home page</button>
     </div>
   </form>

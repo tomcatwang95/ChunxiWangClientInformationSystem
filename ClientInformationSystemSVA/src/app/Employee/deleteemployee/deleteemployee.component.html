@@ -1,13 +1,14 @@
 <form  (ngSubmit)="deleteclient(ClientForm)" #ClientForm="ngForm">
     <div class="form-group">
-      <label for="exampleInputEmail1">Id want to delete:</label>
-      <input type="id" class="form-control" id="id" aria-describedby="id"  [(ngModel)]="id">
+      <label>Id want to delete:</label>
+      <input type="id" class="form-control" name="id" aria-describedby="id"  [(ngModel)]="id">
     </div>
     
     <div class="form-group">
-      <button  type="submit" routerLink="/"class="btn btn-primary">Delete Employee</button>
+      <button  type="submit" class="btn btn-primary">Delete Employee</button>
     </div>
     <div class="alert alert-success" role="alert" *ngIf="Deletesuccess">
         Employee Deleted!
+        <button  type="submit" class="btn btn-primary" routerLink="/">Back to Home page</button>
     </div>
   </form>

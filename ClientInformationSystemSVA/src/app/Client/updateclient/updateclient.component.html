@@ -1,26 +1,27 @@
 <form  (ngSubmit)="updateclient(ClientForm)" #ClientForm="ngForm">
   <div class="form-group">
-    <label for="exampleInputEmail1">Name</label>
-    <input type="name" class="form-control" id="name" aria-describedby="emailHelp"  [(ngModel)]="addclient.name">
+    <label>Name</label>
+    <input type="name" class="form-control" name="name" aria-describedby="emailHelp"  [(ngModel)]="addclient.name">
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Email</label>
-    <input type="email" class="form-control" id="email"  [(ngModel)]="addclient.email">
+    <label>Email</label>
+    <input type="email" class="form-control" name="email"  [(ngModel)]="addclient.email">
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Phone</label>
-    <input type="string" class="form-control" id="phone"  [(ngModel)]="addclient.phones">
+    <label>Phone</label>
+    <input type="string" class="form-control" name="phone"  [(ngModel)]="addclient.phones">
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Address</label>
-    <input type="string" class="form-control" id="Address"  [(ngModel)]="addclient.address">
+    <label>Address</label>
+    <input type="string" class="form-control" name="Address"  [(ngModel)]="addclient.address">
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">AddedOn</label>
-    <input type="string" class="form-control" id="AddedOn"  [(ngModel)]="addclient.addedOn">
+    <label>AddedOn</label>
+    <input type="date" class="form-control" name="AddedOn"  [(ngModel)]="addclient.addedOn">
   </div>
   <button  routerLink="listall" type="submit" class="btn btn-primary">Update Client</button>
   <div class="alert alert-success" role="alert" *ngIf="Updatesuccess">
     Client Updated!
+    <button  type="submit" class="btn btn-primary" routerLink="/">Back to Home page</button>
 </div>
 </form>
